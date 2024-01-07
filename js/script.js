@@ -152,8 +152,10 @@ function generatePassword() {
         password.push(passwordElement); //push methood is used to add random elements to the password array
     }
     console.log(password); // the password is going to be generated
-  
-  return password;
+    password=password.join("");  //joined array elements into a string without any comma between them
+    console.log(password); // the password is going to be generated
+
+  return password;         
 }
 
 
